@@ -14,9 +14,9 @@ def registro(request):
             user.set_password(form.cleaned_data['password'])
             user.save()
             return redirect('login')
-        else:
-            form = RegistroUsuarioForm()
-        return render(request, 'registro.hmtl', {'form': form})
+    else:
+        form = RegistroUsuarioForm()
+    return render(request, 'registro.html', {'form': form})
     
     
 def iniciar_sesion(request):

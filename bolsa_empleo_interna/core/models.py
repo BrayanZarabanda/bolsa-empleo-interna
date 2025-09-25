@@ -7,7 +7,7 @@ class Usuario(AbstractUser):
              ('aspirante','Aspirante'),
              )
     telefono = models.CharField(max_length=20, blank=True, null=True)
-    documento = models.CharField(max_length=20, unique=True, blank=True, null=True)
+    documento = models.CharField(max_length=50, unique=True, blank=True, null=True)
     rol = models.CharField(max_length=10, choices=ROLES)
 
     email = models.EmailField(unique=True)
