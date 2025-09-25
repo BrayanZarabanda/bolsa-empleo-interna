@@ -18,7 +18,7 @@ class Usuario(AbstractUser):
 
     def __str__(self):
         return self.email
-    
+
 class Vacante(models.Model):
     nombre_vacante = models.CharField(max_length=200)
     descripcion = models.TextField()

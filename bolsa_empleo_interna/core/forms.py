@@ -6,7 +6,7 @@ class RegistroUsuarioForm(forms.ModelForm):
     password2 = forms.CharField(label='Confirmar Contraseña', widget=forms.PasswordInput)
 
     class Meta:
-        model = Usuario:
+        model = Usuario
         fields = ['first_name', 'last_name', 'telefono', 'documento', 'email', 'rol', 'password']
         labels = {
             'first_name': 'Nombre',
