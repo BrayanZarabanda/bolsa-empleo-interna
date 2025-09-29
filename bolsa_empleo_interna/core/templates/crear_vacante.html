@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Crear Vacante</title>
+</head>
+<body>
+    <h2>Publicar una nueva vacante</h2>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Crear Vacante</button>
+    </form>
+</body>
+</html>
